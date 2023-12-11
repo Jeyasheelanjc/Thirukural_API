@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=Lato&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.bg_kural{
+    /* border: 2px solid black; */
+    /* background-color: #93080b;
+    #d09106 */
+    border-radius: 0 10px 10px 0;
+    background-image: radial-gradient(circle, #d09106, #c57300, #b75400, #a63505, #93080b);
+}
+#thirukural{
+    font-size: 20px !important;
+    color: white;
+}
+#line2{
+    font-size: 19px !important;
+    color: white;
+}
+#button,#button2{
+    padding: 8px 17px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #a63505bc;
+    color: #ffea00;
+}
+.figure img{
+    border-radius: 10px 0px 0px 10px;
+}
+#button:hover{
+    background-color: #c53b00;
+}
+#button2:hover{
+    background-color: #c53b00;
+}
+#athigaram{
+    font-weight: bold;
+}
+
+@media screen and (max-width:576px) {
+    .figure img{
+        border-radius: 10px 10px 0px 0px;
+    }
+    .bg_kural{
+        border-radius: 0 0 10px 10px;
+    }
+}
