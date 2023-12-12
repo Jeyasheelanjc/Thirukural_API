@@ -42,6 +42,9 @@ button.addEventListener("click", async () => {
         alert("சரியான திருக்குறள் எண்ணைக் கொடுங்கள்")
         return kuralNumber
     }
+    else if(kuralNumber==""){
+        alert("நீங்கள் குறள் எண்ணைக் கொடுக்கவில்லை")
+    }
     else{
         kuralNumber;
     }
