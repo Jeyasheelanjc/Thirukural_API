@@ -36,8 +36,15 @@ const format = "json";  // You can use "xml" for XML format
 
 button.addEventListener("click", async () => {
     // Generate a random kural number
-    let kuralNumber = Math.floor(Math.random() * 1330);  // Assuming you have 20 kural numbers
-
+    // let kuralNumber = Math.floor(Math.random() * 1330);  // Assuming you have 20 kural numbers
+    var kuralNumber=prompt("குறள் எண் வாயிலாக தேடுக")
+    if(kuralNumber>=1331){
+        alert("சரியான திருக்குறள் எண்ணைக் கொடுங்கள்")
+        return kuralNumber
+    }
+    else{
+        kuralNumber;
+    }
     const apiUrl = `https://getthirukkural.appspot.com/api/3.0/kural/${kuralNumber}?appid=${appid}&format=${format}`;
 
     try {
